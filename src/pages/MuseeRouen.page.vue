@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <h1>Dons</h1>
+        <h1>Musée Rouen</h1>
     </Layout>
 </template>
 
@@ -8,7 +8,7 @@
 import Layout from '@/layouts/Default.layout.vue'
 
 export default {
-    name: "Dons",
+    name: "Home",
     components: {
         Layout
     },

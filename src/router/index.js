@@ -9,56 +9,58 @@ const router = createRouter({
         component: Home
     },
     {
-        path: '/observatoire',
-        name: 'Observatoire',
-        component: () => import('../pages/Observatoire.page.vue'),
-        children: [
-            {
-                path: '/association',
-                name: 'Association',
-                component: () => import('../pages/Association.page.vue'),
-            },
-            {
-                path: '/comite-scientifique',
-                name: 'ComiteScientifique',
-                component: () => import('../pages/ComiteScientifique.page.vue'),
-            },
-            {
-                path: '/publications',
-                name: 'Publications',
-                component: () => import('../pages/Publications.page.vue'),
-                children: [
-                    {
-                        path: ':id',
-                        name: 'Publication',
-                        component: () => import('../pages/Publication.page.vue'),
-                    }
-                ]
-            },
-            {
-                path: '/lab-ohm',
-                name: 'LabOHM',
-                component: () => import('../pages/LabOHM.page.vue'),
-            },
-        ]
+        path: '/observatoire/association',
+        name: 'Association',
+        component: () => import('../pages/Association.page.vue'),
     },
     {
-        path: '/musee',
-        name: 'Musee',
+        path: '/observatoire/comite-scientifique',
+        name: 'ComiteScientifique',
+        component: () => import('../pages/ComiteScientifique.page.vue'),
+    },
+    {
+        path: '/observatoire/publications',
+        name: 'Publications',
+        component: () => import('../pages/Publications.page.vue'),
+    },
+    {
+        path: '/observatoire/publications/:id',
+        name: 'Publication',
+        component: () => import('../pages/Publication.page.vue'),
+
+    },
+    {
+        path: '/lab-ohm',
+        name: 'LabOHM',
+        component: () => import('../pages/LabOHM.page.vue'),
+    },
+    {
+        path: '/musee/rouen',
+        name: 'MuseeRouen',
         component: () =>
-            import('../pages/Musee.page.vue')
+            import('../pages/MuseeRouen.page.vue')
     },
     {
-        path: '/presse',
+        path: '/musee/virtuel',
+        name: 'MuseeVirtuel',
+        component: () =>
+            import('../pages/MuseeVirtuel.page.vue')
+    },
+    {
+        path: '/kit-pedagogique',
+        name: 'Kit Pedagogique',
+        component: () =>
+            import('../pages/KitPedagogique.page.vue')
+    },
+    {
+        path: '/presses',
         name: 'Presses',
         component: () => import('../pages/Presses.page.vue'),
-        children: [
-            {
-                path: ':id',
-                name: 'Presse',
-                component: () => import('../pages/Presse.page.vue'),
-            }
-        ]
+    },
+    {
+        path: '/presses/:id',
+        name: 'Presse',
+        component: () => import('../pages/Presse.page.vue'),
     },
     {
         path: '/contact',

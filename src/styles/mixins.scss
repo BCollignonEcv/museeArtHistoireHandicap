@@ -1,0 +1,33 @@
+$white-color: #fff;
+$black-color: #000;
+$primary-color: var(--c-0-100);
+$secondary-color: var(--c-1-100);
+$tertiary-color: var(--c-2-100);
+$error-color: var(--c-3-100);
+$success-color: var(--c-4-100);
+$border-color: var(--c-5-25);
+
+@mixin extra-large-font {
+    font-size: var(--fs-1);
+    line-height: var(--fs-1);
+}
+
+@mixin large-font {
+    font-size: var(--fs-2);
+    line-height: var(--fs-2);
+}
+
+@mixin regular-font {
+    font-size: var(--fs-3);
+    line-height: var(--fs-3);
+}
+
+@mixin small-font {
+    font-size: var(--fs-4);
+    line-height: var(--fs-4);
+}
+
+@mixin extra-small-font {
+    font-size: var(--fs-5);
+    line-height: var(--fs-);
+}

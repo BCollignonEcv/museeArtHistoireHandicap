@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <h1>Home</h1>
+        <h1>Contact</h1>
     </Layout>
 </template>
 
@@ -8,7 +8,7 @@
 import Layout from '@/layouts/Default.layout'
 
 export default {
-    name: "Home",
+    name: "Contact",
     components: {
         Layout
     },
