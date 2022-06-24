@@ -1,15 +1,17 @@
 <template>
   <Layout>
     <section aria-label="kit" class="kit_peda">
-      <div id="diff_kit">
+      <div class="diff_kit">
         <h1>Diffriend, le kit</h1>
+        <br>
         <li>
           Ce kit est destiné à l'animation de groupe en milieu scolaire. Il
           permet de sensibiliser les enfants, développer leur empathie ainsi que
           leur bienveillance face au handicap.
         </li>
-
-        <h4>Diffriend c'est quoi exactement ?</h4>
+        <br>
+        <h6>Diffriend c'est quoi exactement ?</h6>
+        <br>
         <li>
           Diffriend c’est un kit pédagogique, centré sur le thème du handicap.
           Il se déroule en 5 étapes sur une semaine d’école :
@@ -31,12 +33,14 @@
           Jour 5 : Un debrief commun, avec un atelier dessin dans lequel les
           élèves pourront illustrer ce qu’ils ont retenus / préférés
         </li>
-        <li>Tel est le défi que ce kit vous propose de relever !</li>
+       
+       <li>Tel est le défi que ce kit vous propose de relever !</li>
+      <button class="upload">Téléchargez le kit</button>
       </div>
       <img src="../assets/img/kit.png" />
     </section>
     <section aria-label="role_kit" class="kit_role">
-      <h1>À quoi ça sert ?</h1>
+      <h1 class="title2">À quoi ça sert ?</h1>
 
       <li>
         Son but est de <span>poursuivre la réflexion</span> et d'ouvrir la
@@ -52,7 +56,7 @@
       <li>mini-jeux éducatifs</li>
       <li>
         Une notice explicative qui permet aux enseignants d’appréhender la
-        thématique, d’utiliser le kit et de mieux sensibiliser les élèves
+        thématique, d’utiliser<br> le kit et de mieux sensibiliser les élèves
       </li>
       <li>Plan du musée afin de faciliter la visite</li>
       <div>
@@ -112,7 +116,7 @@ export default {
 .kit_peda {
   display: flex;
   flex-direction: row;
-  #diff_kit {
+  .diff_kit {
     width: 40%;
     position: relative;
     left: 22.5rem;
@@ -120,36 +124,56 @@ export default {
       font-family: "Futura PT";
       font-style: normal;
       font-size: 30px;
+      line-height:24px;
       letter-spacing: 0.48px;
     }
     li {
       font-family: "Futura PT";
       font-style: normal;
       font-weight: 400;
+      line-height:22px;
       list-style-type: none;
+    }
+    .upload{
+      margin-top:30px;
+      position: absolute;
+      width: 139px;
+      height: 30px;
+      font-weight:bold;
+      font-family: 'Futura PT';
+      font-style: normal;
+      font-weight: 600;
+      border: 2px solid #A7D5EE;
+      border-radius: 50px;
     }
   }
   img {
-    height: 329px;
-    width: 270px;
+    height: 349px;
+    width: 300px;
     position: relative;
-    top: 70px;
-    margin-left: 400px;
+    top:30px;
+    margin-left: 420px;
   }
 }
 .kit_role {
   position: relative;
   top: 140px;
-  height: 200px;
+  height: 240px;
   text-align: center;
   display: flex;
   flex-direction: column;
   background: rgba(188, 188, 188, 0.12);
+  .title2{
+    position: absolute;
+    margin-top:50px;
+    left:39%;
+  }
   li {
     list-style-type: none;
     width: 40%;
     position: relative;
-    left: 27%;
+    left: 30%;
+    top:130px;
     text-align: center;
   }
 }
@@ -157,18 +181,28 @@ export default {
   position: relative;
   top: 190px;
   left: 2.5rem;
-  h1,
+  h1{
+    font-family: "Futura PT";
+      font-style: normal;
+      font-size: 30px;
+      line-height:24px;
+      margin-bottom:30px;
+      letter-spacing: 0.48px;
+      position:relative;
+      left:19.5rem;
+  }
   li {
     position: relative;
     left: 20.5rem;
+    line-height:18px;
   }
   div {
     position: relative;
     top: 20px;
     display: flex;
     flex-direction: row;
-
-    left: 18rem;
+    gap:30px;
+    left: 12rem;
     .jeu1,
     .jeu2,
     .jeu3 {
@@ -181,7 +215,7 @@ export default {
         width: 300px;
       }
       .figcap1 {
-        left: 3rem;
+        left: 1rem;
         position: absolute;
         color: white;
         top: 14rem;
@@ -202,11 +236,12 @@ export default {
           font-style: normal;
           font-weight: 450;
           width: 280px;
+            font-size: 18px;
           line-height: 26px;
         }
       }
       .figcap2 {
-        left: 27rem;
+        left: 21.2rem;
         position: absolute;
         color: white;
         top: 14rem;
@@ -228,10 +263,11 @@ export default {
           font-weight: 450;
           width: 280px;
           line-height: 26px;
+            font-size: 18px;
         }
       }
       .figcap3 {
-        left: 51rem;
+        left: 42rem;
         position: absolute;
         color: white;
         top: 14rem;
@@ -253,6 +289,7 @@ export default {
           font-weight: 450;
           width: 280px;
           line-height: 26px;
+          font-size: 18px;
         }
       }
     }
