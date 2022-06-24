@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <h1>Blog & Presses</h1>
+        <h1>Kit Pédagogique</h1>
     </Layout>
 </template>
 
@@ -8,7 +8,7 @@
 import Layout from '@/layouts/page/Default.layout.vue'
 
 export default {
-    name: "presses",
+    name: "kit-pedagogique",
     components: {
         Layout
     },

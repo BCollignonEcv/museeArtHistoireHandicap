@@ -13,5 +13,10 @@ export default ({
 });
 </script>
 
-<style>
+<style lang="scss">
+
+@import '@/styles/reset.scss';
+@import '@/styles/base.scss';
+@import '@/styles/style.scss';
+@import '@/styles/form.scss';
 </style>
