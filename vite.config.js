@@ -11,7 +11,7 @@ export default defineConfig({
                 import.meta.url))
         }
     },
-    base: '/',
+    base: '/museeArtHistoireHandicap/',
     configureWebpack: {
         module: {
             rules: [{
