@@ -1,1 +1,0 @@
-import{_ as t,L as o,r as a,o as n,c as s,w as c,a as i}from"./index.c9a21c39.js";const r={name:"ComiteScientifique",components:{Layout:o}},_=i("h1",null,"Comit\xE9 Scientifique",-1);function u(p,f,m,l,d,C){const e=a("Layout");return n(),s(e,null,{default:c(()=>[_]),_:1})}var x=t(r,[["render",u]]);export{x as default};

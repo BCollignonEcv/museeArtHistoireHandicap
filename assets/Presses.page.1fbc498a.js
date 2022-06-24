@@ -1,1 +1,0 @@
-import{_ as s,L as o,r as t,o as a,c as n,w as r,a as c}from"./index.c9a21c39.js";const _={name:"presses",components:{Layout:o}},p=c("h1",null,"Blog & Presses",-1);function l(u,d,f,m,i,h){const e=t("Layout");return a(),n(e,null,{default:r(()=>[p]),_:1})}var B=s(_,[["render",l]]);export{B as default};

@@ -1,0 +1,1 @@
+import{_ as e,L as t,r as a,o as s,c as n,w as c,a as r}from"./index.f0eb983f.js";const _={name:"Adhesion",components:{Layout:t}},p=r("h1",null,"Adh\xE9sion",-1);function d(u,i,l,f,h,m){const o=a("Layout");return s(),n(o,null,{default:c(()=>[p]),_:1})}var L=e(_,[["render",d]]);export{L as default};
