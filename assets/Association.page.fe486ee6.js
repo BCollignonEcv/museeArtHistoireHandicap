@@ -1,1 +1,0 @@
-import{_ as t,L as a,r as s,o as e,c as n,w as c,a as r}from"./index.6281131f.js";const _={name:"Association",components:{Layout:a}},i=r("h1",null,"Association",-1);function p(u,l,d,f,m,h){const o=s("Layout");return e(),n(o,null,{default:c(()=>[i]),_:1})}var L=t(_,[["render",p]]);export{L as default};
