@@ -1,16 +1,16 @@
 <template>
   <footer>
-     <!-- <img
+     <img
             src="../../assets/logo.svg"
             alt="Logo Observatoire du handicap"
             class="logo"
           />
-    <span class="vertical"></span>
-    <span>L'observatoire</span>
-    <span>Le musée</span>
-    <span>Kit pédagogique</span>
-    <span>Blog / Presse</span>
-    <span id="last">Contact</span> -->
+    <li class="vertical"></li>
+    <li>L'observatoire</li>
+    <li>Le musée</li>
+    <li>Kit pédagogique</li>
+    <li>Blog / Presse</li>
+    <li id="last">Contact</li>
   </footer>
 </template>
 
@@ -44,7 +44,8 @@ export default {
     display: inline-block;
     border-left: 0.1rem solid white;
     }
-    span{
+    li{
+      list-style-type: none;
       font-family: sans-serif;
       margin:0;
       padding:0;

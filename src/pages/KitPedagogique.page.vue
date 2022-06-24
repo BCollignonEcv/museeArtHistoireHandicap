@@ -2,15 +2,12 @@
   <Layout>
     <section aria-label="kit" class="kit_peda">
       <div class="diff_kit">
-        <h1>Diffriend, le kit</h1>
+        <h1>{{ $t("KIT.page-title-1")}}</h1>
         <br>
-        <li>
-          Ce kit est destiné à l'animation de groupe en milieu scolaire. Il
-          permet de sensibiliser les enfants, développer leur empathie ainsi que
-          leur bienveillance face au handicap.
+        <li>{{ $t("KIT.page-content1")}}
         </li>
         <br>
-        <h6>Diffriend c'est quoi exactement ?</h6>
+        <h6>{{ $t("KIT.page-title2")}}</h6>
         <br>
         <li>
           Diffriend c’est un kit pédagogique, centré sur le thème du handicap.

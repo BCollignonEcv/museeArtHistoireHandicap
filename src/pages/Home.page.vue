@@ -12,48 +12,48 @@
       </iframe>
       <div>
         <h1>
-          {{ $t("L’observatoire des") }} <br />
-          {{ $t("politiques du handicap") }}
+          {{ $t("HOME.page-title-1") }} <br />
+          {{ $t("HOME.page-title-2") }}
         </h1>
-        <h5>{{ $t("Une politique au service de tous") }}</h5>
+        <h5>{{ $t("HOME.page-subtitle-1") }}</h5>
       </div>
     </section>
     <section id="section_2">
       <h1>
-        {{ $t("À propos de") }} <br />
-        {{ $t("l’observatoire") }}
+        {{ $t("HOME.section-1-title-1") }} <br />
+        {{ $t("HOME.section-1-title-2") }}
       </h1>
       <span class="vertical"></span>
       <div>
-        <p>{{ $t("propos_observ") }}</p>
-        <button>{{ $t("En savoir plus") }}</button>
+        <p>{{ $t("HOME.section-1-content") }}</p>
+        <button>{{ $t("HOME.section-1-action") }}</button>
       </div>
     </section>
     <section id="section_3">
-      <h1>{{ $t("Qu’est-ce que le handicap ?") }}</h1>
-      <p>{{ $t("def_handic") }}</p>
+      <h1>{{ $t("HOME.section-2-title-1") }}</h1>
+      <p>{{ $t("HOME.section-2-content") }}</p>
       <img src="../assets/img.svg" alt="def_handicap" />
     </section>
     <section id="section_4">
       <div id="billet">
         <img src="../assets/billet.svg" alt="billet_svg" />
-        <h5>{{ $t("Réservez votre billet") }}</h5>
+        <h5>{{ $t("HOME.section-3-button-1-label") }}</h5>
         <img id="icon" src="../assets/arrow-right.svg" alt="icon_arrow_right" />
       </div>
       <div id="musee">
         <img src="../assets/musee.svg" alt="musee_virtuel" />
-        <h5>{{ $t("Découvrez le musée virtuel") }}</h5>
+        <h5>{{ $t("HOME.section-3-button-2-label") }}</h5>
         <img id="icon" src="../assets/arrow-right.svg" alt="icon_arrow_right" />
       </div>
       <div class="dons">
-        <h1>{{ $t("Dons") }}<br />{{ $t("et Adhésions") }}</h1>
+        <h1>{{ $t("HOME.section-4-title-1") }}<br />{{ $t("HOME.section-4-title-2") }}</h1>
         <span class="vertical"></span>
 
         <div>
-          <p>{{ $t("dons_adh_paragh") }}</p>
+          <p>{{ $t("HOME.dons_adh_paragh") }}</p>
           <div>
-            <button>{{ $t("btn_don") }}</button>
-            <button>{{ $t("btn_Adh") }}</button>
+            <button>{{ $t("HOME.btn_don") }}</button>
+            <button>{{ $t("HOME.btn_Adh") }}</button>
           </div>
         </div>
       </div>
@@ -61,8 +61,8 @@
     <section id="instagram">
       <div class="div_insta">
         <div>
-          <h1>{{ $t("insta") }}</h1>
-          <p>{{ $t("insta_text") }}</p>
+          <h1>{{ $t("HOME.insta") }}</h1>
+          <p>{{ $t("HOME.insta_text") }}</p>
         </div>
         <button><img src="../assets/add.svg" /></button>
       </div>
@@ -73,8 +73,8 @@
       </div>
     </section>
     <section id="contact">
-      <h1>{{ $t("res_contact") }}</h1>
-      <p>{{ $t("contact_text") }}</p>
+      <h1>{{ $t("HOME.res_contact") }}</h1>
+      <p>{{ $t("HOME.contact_text") }}</p>
       <button>{{ $t("inscrip") }}</button>
       <img src="../assets/mail.svg" />
     </section>
