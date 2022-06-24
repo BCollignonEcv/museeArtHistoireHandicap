@@ -18,4 +18,5 @@ export default ({
 @import '@/styles/reset.scss';
 @import '@/styles/base.scss';
 @import '@/styles/style.scss';
+@import '@/styles/form.scss';
 </style>

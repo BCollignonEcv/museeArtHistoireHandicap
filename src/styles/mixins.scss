@@ -6,7 +6,6 @@ $tertiary-color: var(--c-2-100);
 $error-color: var(--c-3-100);
 $success-color: var(--c-4-100);
 $border-color: var(--c-5-25);
-
 @mixin extra-large-font {
     font-size: var(--fs-1);
     line-height: var(--fs-1);
@@ -30,4 +29,17 @@ $border-color: var(--c-5-25);
 @mixin extra-small-font {
     font-size: var(--fs-5);
     line-height: var(--fs-);
+}
+
+@mixin wrapper {
+    padding: 2rem;
+    &.full {
+        padding: 0;
+    }
+    @media screen and (min-width: 1440px) {
+        padding: 2rem 10rem;
+        &.full {
+            padding: 0;
+        }
+    }
 }

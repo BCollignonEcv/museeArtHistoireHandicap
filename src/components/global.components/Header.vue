@@ -2,18 +2,30 @@
   <header class="header" role="banner">
     <div class="header_part header_left">
       <nav role="navigation">
-        <button type="button" class="menu_toggle nav_item btn-icon btn-icon-vertical" @click="openDrawer()">
+        <button
+          type="button"
+          class="menu_toggle nav_item btn-icon btn-icon-vertical"
+          @click="openDrawer()"
+        >
           <font-awesome-icon icon="fa-solid fa-bars" size="xl" />
           <span class="btn-icon-label">menu</span>
         </button>
         <div role="dialog" aria-modal="true" aria-label="Menu">
           <transition name="fadeIn">
-            <div v-if="isOpenDrawer" class="menu_drawer_mask" @click="closeDrawer()"></div>
+            <div
+              v-if="isOpenDrawer"
+              class="menu_drawer_mask"
+              @click="closeDrawer()"
+            ></div>
           </transition>
           <transition name="slideLeft">
             <div v-if="isOpenDrawer" class="menu_drawer">
               <div class="menu_drawer_action">
-                <button type="button" class="menu_toggle btn-icon btn-icon-horizontal" @click="closeDrawer()">
+                <button
+                  type="button"
+                  class="menu_toggle btn-icon btn-icon-horizontal"
+                  @click="closeDrawer()"
+                >
                   <font-awesome-icon icon="fa-solid fa-xmark" size="xl" />
                   <span class="btn-icon-label">Fermer</span>
                 </button>
@@ -21,52 +33,90 @@
               <div class="menu_drawer_navigation">
                 <ul>
                   <li>
-                    <button type="button" class="menu_drawer_item" aria-expanded="true"
-                      @click="openDrawerChild('observatoire')">
+                    <button
+                      type="button"
+                      class="menu_drawer_item"
+                      aria-expanded="true"
+                      @click="openDrawerChild('observatoire')"
+                    >
                       Observatoire
                     </button>
                   </li>
                   <li>
-                    <button type="button" class="menu_drawer_item" aria-expanded="true"
-                      @click="openDrawerChild('musee')">
+                    <button
+                      type="button"
+                      class="menu_drawer_item"
+                      aria-expanded="true"
+                      @click="openDrawerChild('musee')"
+                    >
                       Le musée
                     </button>
                   </li>
                   <li>
-                    <button type="button" class="menu_drawer_item menu_drawer_link" @click="closeDrawerChild()">
-                      <router-link to="/kit-pedagogique">Kit Pédagogique</router-link>
+                    <button
+                      type="button"
+                      class="menu_drawer_item menu_drawer_link"
+                      @click="closeDrawerChild()"
+                    >
+                      <router-link to="/kit-pedagogique"
+                        >Kit Pédagogique</router-link
+                      >
                     </button>
                   </li>
                   <li>
-                    <button type="button" class="menu_drawer_item menu_drawer_link" @click="closeDrawerChild()">
+                    <button
+                      type="button"
+                      class="menu_drawer_item menu_drawer_link"
+                      @click="closeDrawerChild()"
+                    >
                       <router-link to="/presses">Blog/Presse</router-link>
                     </button>
                   </li>
                   <li>
-                    <button type="button" class="menu_drawer_item menu_drawer_link" @click="closeDrawerChild()">
+                    <button
+                      type="button"
+                      class="menu_drawer_item menu_drawer_link"
+                      @click="closeDrawerChild()"
+                    >
                       <router-link to="/contact">Contact</router-link>
                     </button>
                   </li>
                   <li>
-                    <button class="menu_drawer_item menu_drawer_link" @click="closeDrawerChild()">
+                    <button
+                      class="menu_drawer_item menu_drawer_link"
+                      @click="closeDrawerChild()"
+                    >
                       <router-link to="/dons">Dons</router-link>
                     </button>
                   </li>
                   <li>
-                    <button type="button" class="menu_drawer_item menu_drawer_link" @click="closeDrawerChild()">
+                    <button
+                      type="button"
+                      class="menu_drawer_item menu_drawer_link"
+                      @click="closeDrawerChild()"
+                    >
                       <router-link to="/adhesion">Adhésion</router-link>
                     </button>
                   </li>
                 </ul>
                 <div class="menu_drawer_footer">
-                  <a href="http://www.facebook.com/observatoirehandicapmonde" target="_blank">
+                  <a
+                    href="http://www.facebook.com/observatoirehandicapmonde"
+                    target="_blank"
+                  >
                     <button type="button" class="btn-icon-circle">
-                      <font-awesome-icon icon="fa-brands fa-facebook-f" size="xl" />
+                      <font-awesome-icon
+                        icon="fa-brands fa-facebook-f"
+                        size="xl"
+                      />
                     </button>
                   </a>
                   <a href="http://" target="_blank">
                     <button type="button" class="btn-icon-circle">
-                      <font-awesome-icon icon="fa-brands fa-instagram" size="xl" />
+                      <font-awesome-icon
+                        icon="fa-brands fa-instagram"
+                        size="xl"
+                      />
                     </button>
                   </a>
                 </div>
@@ -74,19 +124,31 @@
             </div>
           </transition>
           <transition name="slideLeft">
-            <div v-if="isOpenDrawerChild === 'observatoire'" class="menu_drawer_child">
+            <div
+              v-if="isOpenDrawerChild === 'observatoire'"
+              class="menu_drawer_child"
+            >
               <ul>
                 <li>
-                  <RouterLink to="/observatoire/association" class="menu_drawer_child_item menu_drawer_link">Association
+                  <RouterLink
+                    to="/observatoire/association"
+                    class="menu_drawer_child_item menu_drawer_link"
+                    >Association
                   </RouterLink>
                 </li>
                 <li>
-                  <RouterLink to="/observatoire/comite-scientifique" class="menu_drawer_child_item menu_drawer_link">
+                  <RouterLink
+                    to="/observatoire/comite-scientifique"
+                    class="menu_drawer_child_item menu_drawer_link"
+                  >
                     Comité Scientifique
                   </RouterLink>
                 </li>
                 <li>
-                  <RouterLink to="/observatoire/publications" class="menu_drawer_child_item menu_drawer_link">
+                  <RouterLink
+                    to="/observatoire/publications"
+                    class="menu_drawer_child_item menu_drawer_link"
+                  >
                     Publications
                   </RouterLink>
                 </li>
@@ -97,11 +159,17 @@
             <div v-if="isOpenDrawerChild === 'musee'" class="menu_drawer_child">
               <ul>
                 <li>
-                  <RouterLink to="/musee/rouen" class="menu_drawer_child_item menu_drawer_link">Musée physique
+                  <RouterLink
+                    to="/musee/rouen"
+                    class="menu_drawer_child_item menu_drawer_link"
+                    >Musée physique
                   </RouterLink>
                 </li>
                 <li>
-                  <RouterLink to="/musee/virtuel" class="menu_drawer_child_item menu_drawer_link">Musée virtuel
+                  <RouterLink
+                    to="/musee/virtuel"
+                    class="menu_drawer_child_item menu_drawer_link"
+                    >Musée virtuel
                   </RouterLink>
                 </li>
               </ul>
@@ -109,15 +177,24 @@
           </transition>
         </div>
       </nav>
-      <button type="button" class="nav_item btn-icon btn-icon-horizontal btn-icon-light">
-        <font-awesome-icon icon="fa-solid fa-globe" size="sm" />
-        <span class="btn-icon-label">FR</span>
+      <button
+        type="button"
+        class="nav_item btn-icon btn-icon-horizontal btn-icon-light"
+      >
+        <select class="select-light" name="country-field" id="country-field">
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+        </select>
       </button>
     </div>
     <div class="header_part header_middle">
       <RouterLink to="/" class="nav_item">
         <h1 class="header_home">
-          <img src="/logo-light.svg" alt="Logo Observatoire du handicap" class="logo" />
+          <img
+            src="/logo-light.svg"
+            alt="Logo Observatoire du handicap"
+            class="logo"
+          />
         </h1>
       </RouterLink>
     </div>
@@ -177,6 +254,7 @@ header.header {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+  background-color: $white-color;
 
   .header_part {
     display: flex;
@@ -204,6 +282,10 @@ header.header {
 
     &.header_right {
       justify-content: end;
+
+      .nav_item:last-of-type {
+        margin-right: 0;
+      }
     }
   }
 
@@ -211,9 +293,11 @@ header.header {
     @include regular-font;
   }
 
-  .menu_drawer_container {}
+  .menu_drawer_container {
+  }
 
-  .menu_toggle {}
+  .menu_toggle {
+  }
 
   .menu_drawer_mask {
     position: fixed;
@@ -269,7 +353,7 @@ header.header {
     font-weight: bold;
     margin: 0.5rem 0;
     border-color: $secondary-color;
-    transition: all .5s ease-out;
+    transition: all 0.5s ease-out;
 
     &:hover {
       padding-left: 1rem;
@@ -283,11 +367,11 @@ header.header {
     @include small-font;
     padding: 2rem 0;
     border-color: $secondary-color;
-    transition: all .5s ease-out;
+    transition: all 0.5s ease-out;
     border-top: 1px solid $border-color;
 
     &:hover {
-      padding-left: .2rem;
+      padding-left: 0.2rem;
     }
   }
 
@@ -304,7 +388,7 @@ header.header {
 
 .slideLeft-enter-from,
 .slideLeft-leave-to {
-  margin-left: - ($drawer-size + $drawer-child-size);
+  margin-left: -($drawer-size + $drawer-child-size);
 }
 
 .fadeIn-enter-active,

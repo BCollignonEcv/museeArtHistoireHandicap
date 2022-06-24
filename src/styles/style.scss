@@ -5,7 +5,6 @@ button:hover {
 
 .btn-icon {
     display: flex;
-
     &.btn-icon-vertical {
         flex-direction: column;
         justify-content: center;
@@ -24,8 +23,7 @@ button:hover {
         font-weight: bold;
         font-size: 1.2rem;
     }
-
-    &.btn-icon-light{
+    &.btn-icon-light {
         svg {
             margin-right: .5rem;
         }
@@ -35,7 +33,6 @@ button:hover {
             font-size: 1rem;
         }
     }
-
     &:hover {
         color: $secondary-color;
         svg.icon * {
@@ -54,10 +51,8 @@ button:hover {
     width: 3rem;
     border: 3px solid $black-color;
     transition: all .5s ease;
-
     &:hover {
         border-color: $secondary-color;
-
         svg.icon * {
             fill: $secondary-color;
             stroke: $secondary-color;
@@ -71,10 +66,21 @@ button:hover {
         font-weight: bold;
         border-radius: 1.5rem;
         background-color: var(--c-0-100);
-        margin: auto;
         &:hover {
             color: #000;
             background-color: var(--c-1-100);
         }
     }
+}
+
+.card {
+    border-radius: 1rem;
+    background-color: white;
+    filter: drop-shadow(0px 3px 40px rgba(0, 0, 0, 0.07));
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.wrapper {
+    @include wrapper
 }
