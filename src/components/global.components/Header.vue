@@ -186,16 +186,7 @@
           </transition>
         </div>
       </nav>
-      <button
-        type="button"
-        class="nav_item btn-icon btn-icon-horizontal btn-icon-light"
-        tabindex="-1"
-      >
-        <select class="select-light" name="country-field" id="country-field">
-          <option value="fr">FR</option>
-          <option value="en">EN</option>
-        </select>
-      </button>
+      <LanguageSelector/>
     </div>
     <div class="header_part header_middle">
       <RouterLink to="/" class="nav_item">
@@ -210,10 +201,14 @@
     </div>
     <div class="header_part header_right">
       <RouterLink to="/dons" class="nav_item">
-        <button type="button" class="btn btn-primary" tabindex="-1">Dons</button>
+        <button type="button" class="btn btn-primary" tabindex="-1">
+          Dons
+        </button>
       </RouterLink>
       <RouterLink to="/adhesion" class="nav_item">
-        <button type="button" class="btn btn-primary" tabindex="-1">Adhésion</button>
+        <button type="button" class="btn btn-primary" tabindex="-1">
+          Adhésion
+        </button>
       </RouterLink>
     </div>
   </header>
@@ -223,7 +218,12 @@
 </template>
 
 <script>
+import { LanguageSelector } from "@/components/custom.components";
+
 export default {
+  components: {
+    LanguageSelector
+  },
   data() {
     return {
       isOpenDrawer: false,

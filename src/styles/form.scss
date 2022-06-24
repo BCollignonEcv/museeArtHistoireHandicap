@@ -11,6 +11,10 @@ textarea {
 
 input[type="submit"] {}
 
+input[type="email"] {
+    max-width: 30vw;
+}
+
 input[type="checkbox"],
 input[type="checkbox"]+label {
     width: auto;

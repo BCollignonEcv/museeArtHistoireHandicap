@@ -1,6 +1,6 @@
 <template>
   <Layout :full="true">
-    <section id="section_1">
+    <!-- <section id="section_1">
       <iframe
         src="https://www.youtube.com/watch?v=E2WBNLp6z1I&t=4s"
         name="iFrame Name"
@@ -12,52 +12,89 @@
       </iframe>
       <div>
         <h1>
-          {{ $t("L’observatoire des") }} <br />
-          {{ $t("politiques du handicap") }}
+          {{ $t("page-title-1") }} <br />
+          {{ $t("page-title-2") }}
         </h1>
-        <h5>{{ $t("Une politique au service de tous") }}</h5>
+        <h5>{{ $t("page-subtitle-1") }}</h5>
       </div>
-    </section>
-    <section id="section_2">
-      <h1>
-        {{ $t("À propos de") }} <br />
-        {{ $t("l’observatoire") }}
-      </h1>
-      <span class="vertical"></span>
-      <div>
-        <p>{{ $t("propos_observ") }}</p>
-        <button>{{ $t("En savoir plus") }}</button>
-      </div>
-    </section>
-    <section id="section_3">
-      <h1>{{ $t("Qu’est-ce que le handicap ?") }}</h1>
-      <p>{{ $t("def_handic") }}</p>
-      <img src="../assets/img.svg" alt="def_handicap" />
-    </section>
+    </section> -->
+    <BlocText :type="'separate'" :wrapper="true">
+      <template v-slot:title>
+        <h2>
+          {{ $t("section-1-title-1") }} <br />
+          {{ $t("section-1-title-2") }}
+        </h2>
+      </template>
+      <template v-slot:content>
+        <p>{{ $t("section-1-content") }}</p>
+        <RouterLink to="/observatoire/association">
+          <button class="btn btn-primary">{{ $t("section-1-action") }}</button>
+        </RouterLink>
+      </template>
+    </BlocText>
+    <BlocText :type="'splitedImg'" :wrapper="true" :bg-color="'bg-gray'">
+      <template v-slot:content>
+        <h2>{{ $t("section-2-title-1") }}</h2>
+        <p>{{ $t("section-2-content") }}</p>
+      </template>
+      <template v-slot:img>
+        <img src="../assets/img.svg" alt="def_handicap" />
+      </template>
+    </BlocText>
     <section id="section_4">
       <div id="billet">
         <img src="../assets/billet.svg" alt="billet_svg" />
-        <h5>{{ $t("Réservez votre billet") }}</h5>
+        <h5>{{ $t("section-3-button-1-label") }}</h5>
         <img id="icon" src="../assets/arrow-right.svg" alt="icon_arrow_right" />
       </div>
       <div id="musee">
         <img src="../assets/musee.svg" alt="musee_virtuel" />
-        <h5>{{ $t("Découvrez le musée virtuel") }}</h5>
+        <h5>{{ $t("section-3-button-2-label") }}</h5>
         <img id="icon" src="../assets/arrow-right.svg" alt="icon_arrow_right" />
       </div>
-      <div class="dons">
-        <h1>{{ $t("Dons") }}<br />{{ $t("et Adhésions") }}</h1>
-        <span class="vertical"></span>
-
-        <div>
-          <p>{{ $t("dons_adh_paragh") }}</p>
-          <div>
-            <button>{{ $t("btn_don") }}</button>
-            <button>{{ $t("btn_Adh") }}</button>
-          </div>
-        </div>
-      </div>
     </section>
+    <BlocText :type="'splitedImg'" :wrapper="true" :bg-color="'bg-gray'">
+      <template v-slot:content>
+        <h2>{{ $t("section-4-title-1") }}</h2>
+        <p>{{ $t("section-4-content") }}</p>
+        <div style="display: flex; gap: 1rem">
+          <button class="btn btn-primary">
+            {{ $t("section-4-action-1") }}
+          </button>
+          <RouterLink to="/kit-pedagogique">
+            <button class="btn btn-primary">
+              {{ $t("section-4-action-2") }}
+            </button>
+          </RouterLink>
+        </div>
+      </template>
+      <template v-slot:img>
+        <img src="/kit.png" alt="def_handicap" />
+      </template>
+    </BlocText>
+    <BlocText :type="'separate'" :wrapper="true">
+      <template v-slot:title>
+        <h2>
+          {{ $t("section-5-title-1") }}
+          {{ $t("section-5-title-2") }}
+        </h2>
+      </template>
+      <template v-slot:content>
+        <p>{{ $t("section-5-content") }}</p>
+        <div style="display: flex; gap: 1rem">
+          <RouterLink to="/dons">
+            <button class="btn btn-primary">
+              {{ $t("section-5-action-1") }}
+            </button>
+          </RouterLink>
+          <RouterLink to="/adhesion">
+            <button class="btn btn-primary">
+              {{ $t("section-5-action-2") }}
+            </button>
+          </RouterLink>
+        </div>
+      </template>
+    </BlocText>
     <section id="instagram">
       <div class="div_insta">
         <div>
@@ -72,17 +109,34 @@
         <canvas></canvas>
       </div>
     </section>
-    <section id="contact">
-      <h1>{{ $t("res_contact") }}</h1>
-      <p>{{ $t("contact_text") }}</p>
-      <button>{{ $t("inscrip") }}</button>
-      <img src="../assets/mail.svg" />
-    </section>
+    <BlocText :type="'splitedImg'" :wrapper="true" :bg-color="'bg-gray'">
+      <template v-slot:content>
+        <h2>{{ $t("section-7-title-1") }}</h2>
+        <p>{{ $t("section-7-content") }}</p>
+        <form action="" method="post">
+          <div class="form-item">
+            <label for="email-field">Email</label>
+            <input
+              type="email"
+              placeholder="nomprenom@mail.fr"
+              id="email-field"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">
+            {{ $t("section-7-action-1") }}
+          </button>
+        </form>
+      </template>
+      <template v-slot:img>
+        <img src="../assets/mail.svg" alt="mail image" />
+      </template>
+    </BlocText>
   </Layout>
 </template>
 
 <script>
-import Layout from '@/layouts/page/Default.layout.vue'
+import Layout from "@/layouts/page/Default.layout.vue";
+import { BlocText } from "@/layouts/component.layouts";
 
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation } from "swiper";
@@ -95,6 +149,7 @@ export default {
   name: "Home",
   components: {
     Layout,
+    BlocText,
   },
 };
 </script>
